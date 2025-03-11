@@ -1,0 +1,39 @@
+// Apply background color to the entire viewport
+body {
+    background-color: #b86161 !important;
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Main container styling
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // Ensures full viewport height
+    width: 100%;
+    background-color: #b86161 !important; // Ensures background color applies
+  
+    .content {
+      background: rgb(74, 28, 28);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+  
+      h1 {
+        font-size: 24px;
+        color: #ffffff; // Changed text color for better contrast
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  // Make sure router-outlet has spacing
+  router-outlet {
+    display: block;
+    margin-top: 20px;
+  }
+  
