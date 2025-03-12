@@ -2,8 +2,12 @@
   <div class="logo">AngTestApp</div>
   <nav class="nav">
     <ul>
-      <li><a routerLink="/" routerLinkActive="active">Home</a></li>  <!-- FIXED -->
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a routerLink="/">Home</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/about">About</a>
+      </li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
