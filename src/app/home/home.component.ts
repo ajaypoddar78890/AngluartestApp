@@ -7,4 +7,8 @@ import { GreeterComponent } from '../componants/greeter/greeter.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  keyupHandler(event: KeyboardEvent) {
+    console.log(`user typed something ${event.key} `);
+  }
+}
