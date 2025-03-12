@@ -1,3 +1,8 @@
-<p>home works!</p>
-<input type="text" (keyup)="keyupHandler($event)" placeholder="Type something..." />
-<app-greeter>
+<h1>Welcome to Home Component</h1>
+
+<app-greeter></app-greeter> <!-- ✅ Use the GreeterComponent -->
+
+<app-counter [counter]="counter"></app-counter>
+
+<button (click)="increaseCounter()">Increase</button>
+<button (click)="decreaseCounter()">Decrease</button>
